@@ -16,7 +16,7 @@
                     </nav>
                     <div class="user-actions">
                         <a href="#">LOG IN</a>
-                        <img src="/images/icons/user-icon.png" alt="User">
+                        <img src="/images/icons/user-icon.png" alt="User" />
                         <img src="/images/icons/favorite-icon.png" alt="Favorite">
                         <img src="/images/icons/cart-icon.png" alt="Cart">
                     </div>
