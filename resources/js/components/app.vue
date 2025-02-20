@@ -19,6 +19,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Стили для App.vue */
-</style>
+

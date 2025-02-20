@@ -13,8 +13,10 @@ export default defineConfig({
     resolve: {
         alias: {
             'vue': 'vue/dist/vue.esm-bundler.js',
-            //'@': '/resources', // Добавляем алиас для удобного импорта
+            //'@': '/resources',
         },
     },
-    publicDir: 'public', // Указываем директорию для публичных файлов
+    build: {
+        outDir: 'public/build',
+    },
 });

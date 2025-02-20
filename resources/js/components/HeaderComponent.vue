@@ -1,25 +1,21 @@
 <template>
     <header>
-        <div>
-            <div class="top-banner">
-                International free shipping on all orders over €49 - Over 80 000 reviews - 30 days return - 100% climate compensated
-            </div>
-            <div class="header">
-                <div class="header-content">
-                    <div class="logo"><router-link to="/">URSUS</router-link></div>
-                    <nav class="nav">
-                        <router-link to="/shop/Women">WOMEN</router-link>
-                        <router-link to="/shop/Men">MEN</router-link>
-                        <router-link to="/shop/Kids">KIDS</router-link>
-                        <router-link to="/shop/Accessories">ACCESSORIES</router-link>
-                        <router-link to="/shop/Sale">SALE</router-link>
-                    </nav>
-                    <div class="user-actions">
-                        <a href="#">LOG IN</a>
-                        <img src="/images/icons/user-icon.png" alt="User" />
-                        <img src="/images/icons/favorite-icon.png" alt="Favorite">
-                        <img src="/images/icons/cart-icon.png" alt="Cart">
-                    </div>
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <router-link to="/">URSUS</router-link>
+                </div>
+                <nav class="nav">
+                    <router-link to="/shop/Women">WOMEN</router-link>
+                    <router-link to="/shop/Men">MEN</router-link>
+                    <router-link to="/shop/Kids">KIDS</router-link>
+                    <router-link to="/shop/Accessories">ACCESSORIES</router-link>
+                    <router-link to="/shop/Sale">SALE</router-link>
+                </nav>
+                <div class="user-actions">
+                    <img :src="'/images/icons/user-icon.png'" alt="User">
+                    <img :src="'/images/icons/favorite-icon.png'" alt="Favorite">
+                    <img :src="'/images/icons/cart-icon.png'" alt="Cart">
                 </div>
             </div>
         </div>
@@ -27,10 +23,12 @@
 </template>
 
 <script>
+
 export default {
-    name: 'HeaderComponent'
-}
+    name: 'HeaderComponent',
+};
 </script>
+
 
 <style scoped>
 .top-banner {
@@ -68,7 +66,7 @@ export default {
     font-size: 15px;
     letter-spacing: 2px;
     position: relative;
-    padding-bottom: 30px; /* Отступ снизу для подчеркивания */
+    padding-bottom: 32px; /* Отступ снизу для подчеркивания */
 }
 
 .nav a::after {
